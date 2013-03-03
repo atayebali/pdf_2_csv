@@ -3,6 +3,7 @@
 .idea/
 .bundle
 .rvmrc
+.DS_Store
 .config
 .yardoc
 Gemfile.lock

@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require 'pdf_2_csv'
+
+dir = ARGV[0]
+puts "Converting pdfs in #{dir}"
+
+converter = Pdf2Csv::Converter.new dir
+converter.convert_files!
