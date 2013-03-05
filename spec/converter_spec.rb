@@ -19,7 +19,7 @@ describe Pdf2Csv::Converter do
 
   describe "#convert_files!" do
     def setup_pdf
-      FileUtils.cp "./spec/test_input/sample.pdf", "./spec/pdfs/sample.pdf"
+      FileUtils.cp "./spec/fixture/sample.pdf", "./spec/pdfs/sample.pdf"
       @dirpath = "./spec/pdfs/"
     end
 
@@ -39,7 +39,8 @@ describe Pdf2Csv::Converter do
 
     it "converts file in directory #convert_file" do
       @converter.convert_files!
-      p Dir.entries(@dirpath)
+      csvs = Dir.entries(@dirpath).map { |file| file.chomp.scan(/csv/)}
+      csvs.should_not be_empty
     end
   end
 end

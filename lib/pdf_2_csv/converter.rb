@@ -53,7 +53,6 @@ module Pdf2Csv
       else
         csv = @instruction.to_csv(lines)
       end
-
       csv
     end
 

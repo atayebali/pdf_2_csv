@@ -4,8 +4,8 @@ require File.expand_path('../lib/pdf_2_csv/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Anis Tayebali"]
   gem.email         = ["anis.tayebali@hyfn.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{This is a simple gem that reads in a pdf and return the text data as a csv}
+  gem.summary       = %q{Convert a pdf into a csv}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
